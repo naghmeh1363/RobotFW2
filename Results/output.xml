@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.7.4 on win32)" generated="20221001 00:47:51.794" rpa="false" schemaversion="2">
+<suite id="s1" name="AvailabilityOfProduct" source="C:\Users\n.karimian\PycharmProjects\RobotFW1\Tests\AvailabilityOfProduct.robot">
+<test id="s1-t1" name="Check The Availability Of Product In DigiKala">
+<kw name="Start TestCase" library="CommonFunctionality">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${speed}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20221001 00:47:51.998" endtime="20221001 00:47:51.999"/>
+</kw>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<arg>${timeout}</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20221001 00:47:51.999" endtime="20221001 00:47:51.999"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221001 00:47:51.999" level="INFO">Opening browser 'Chrome' to base url 'https://www.digikala.com/'.</msg>
+<status status="PASS" starttime="20221001 00:47:51.999" endtime="20221001 00:47:54.175"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221001 00:47:54.175" endtime="20221001 00:47:54.841"/>
+</kw>
+<status status="PASS" starttime="20221001 00:47:51.998" endtime="20221001 00:47:54.841"/>
+</kw>
+<kw name="Login To Digikala" library="LoginTheStore">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//a[@data-cro-id="header-profile"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221001 00:47:54.842" endtime="20221001 00:47:56.772"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[@data-cro-id="header-profile"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221001 00:47:56.772" level="INFO">Clicking element '//a[@data-cro-id="header-profile"]'.</msg>
+<status status="PASS" starttime="20221001 00:47:56.772" endtime="20221001 00:47:58.108"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//input[@type="text"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221001 00:47:58.108" endtime="20221001 00:47:59.107"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@type="text"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221001 00:47:59.108" level="INFO">Typing text 'naghmeh_karimian@yahoo.com' into text field '//input[@type="text"]'.</msg>
+<status status="PASS" starttime="20221001 00:47:59.107" endtime="20221001 00:47:59.224"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221001 00:48:04.224" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221001 00:47:59.224" endtime="20221001 00:48:04.224"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>XPATH://*[@id="__next"]/main/div[2]/div[2]/form/button/div[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221001 00:48:04.224" level="INFO">Clicking element 'XPATH://*[@id="__next"]/main/div[2]/div[2]/form/button/div[2]'.</msg>
+<status status="PASS" starttime="20221001 00:48:04.224" endtime="20221001 00:48:04.298"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221001 00:48:06.300" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221001 00:48:04.298" endtime="20221001 00:48:06.300"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>//*[@id="__next"]/main/div[2]/div[2]/form/label/div/div[1]/input</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221001 00:48:06.300" endtime="20221001 00:48:06.325"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>//*[@id="__next"]/main/div[2]/div[2]/form/label/div/div[1]/input</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221001 00:48:06.325" level="INFO">Typing password into text field '//*[@id="__next"]/main/div[2]/div[2]/form/label/div/div[1]/input'.</msg>
+<msg timestamp="20221001 00:48:06.360" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221001 00:48:06.401" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221001 00:48:06.325" endtime="20221001 00:48:06.401"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="__next"]/main/div[2]/div[2]/button[2]/div[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221001 00:48:06.402" level="INFO">Clicking element '//*[@id="__next"]/main/div[2]/div[2]/button[2]/div[2]'.</msg>
+<status status="PASS" starttime="20221001 00:48:06.402" endtime="20221001 00:48:06.449"/>
+</kw>
+<status status="PASS" starttime="20221001 00:47:54.842" endtime="20221001 00:48:06.449"/>
+</kw>
+<kw name="Apple Phone Search" library="ChoosingFromStore">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="base_layout_desktop_fixed_header"]/header/nav/div[1]/div[1]/div[1]/div/span</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221001 00:48:06.450" endtime="20221001 00:48:07.989"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>//*[@id="base_layout_desktop_fixed_header"]/header/nav/div[1]/div[1]/div[1]/div/span</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20221001 00:48:07.989" level="INFO">Simulating Mouse Over on element '//*[@id="base_layout_desktop_fixed_header"]/header/nav/div[1]/div[1]/div[1]/div/span'.</msg>
+<status status="PASS" starttime="20221001 00:48:07.989" endtime="20221001 00:48:08.325"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="base_layout_desktop_fixed_header"]/header/nav/div[1]/div[1]/div[1]/div/div/div/div[1]/div[2]/a/p</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221001 00:48:08.325" endtime="20221001 00:48:08.433"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>//*[@id="base_layout_desktop_fixed_header"]/header/nav/div[1]/div[1]/div[1]/div/div/div/div[1]/div[2]/a/p</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20221001 00:48:08.433" level="INFO">Simulating Mouse Over on element '//*[@id="base_layout_desktop_fixed_header"]/header/nav/div[1]/div[1]/div[1]/div/div/div/div[1]/div[2]/a/p'.</msg>
+<status status="PASS" starttime="20221001 00:48:08.433" endtime="20221001 00:48:08.864"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="base_layout_desktop_fixed_header"]/header/nav/div[1]/div[1]/div[1]/div/div/div/div[2]/div[2]/div[1]/ul/a[6]/span</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221001 00:48:08.865" endtime="20221001 00:48:08.913"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>//*[@id="base_layout_desktop_fixed_header"]/header/nav/div[1]/div[1]/div[1]/div/div/div/div[2]/div[2]/div[1]/ul/a[6]/span</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20221001 00:48:08.914" level="INFO">Simulating Mouse Over on element '//*[@id="base_layout_desktop_fixed_header"]/header/nav/div[1]/div[1]/div[1]/div/div/div/div[2]/div[2]/div[1]/ul/a[6]/span'.</msg>
+<status status="PASS" starttime="20221001 00:48:08.913" endtime="20221001 00:48:09.200"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//*[@id="base_layout_desktop_fixed_header"]/header/nav/div[1]/div[1]/div[1]/div/div/div/div[2]/div[2]/div[1]/ul/a[6]/span</arg>
+<arg>[Return]</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221001 00:48:09.201" level="INFO">Sending key(s) ('[Return]',) to //*[@id="base_layout_desktop_fixed_header"]/header/nav/div[1]/div[1]/div[1]/div/div/div/div[2]/div[2]/div[1]/ul/a[6]/span element.</msg>
+<msg timestamp="20221001 00:48:11.044" level="INFO">Sending keys [Return]</msg>
+<status status="PASS" starttime="20221001 00:48:09.200" endtime="20221001 00:48:11.232"/>
+</kw>
+<status status="PASS" starttime="20221001 00:48:06.450" endtime="20221001 00:48:11.233"/>
+</kw>
+<kw name="Selection Of The Best Selling Menu" library="ChoosingFromStore">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>//*[@id="plpLayoutContainer"]/section[1]/div[1]/div/div[2]/div[2]</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221001 00:48:11.245" endtime="20221001 00:48:11.759"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>//*[@id="plpLayoutContainer"]/section[1]/div[1]/div/div[2]/div[2]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20221001 00:48:11.760" level="INFO">Simulating Mouse Over on element '//*[@id="plpLayoutContainer"]/section[1]/div[1]/div/div[2]/div[2]'.</msg>
+<status status="PASS" starttime="20221001 00:48:11.759" endtime="20221001 00:48:12.085"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="plpLayoutContainer"]/section[1]/div[1]/div/div[2]/div[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221001 00:48:12.086" level="INFO">Clicking element '//*[@id="plpLayoutContainer"]/section[1]/div[1]/div/div[2]/div[2]'.</msg>
+<status status="PASS" starttime="20221001 00:48:12.085" endtime="20221001 00:48:12.181"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>//*[@id="plpLayoutContainer"]/section[1]/div[1]/div/div[2]/div[3]</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221001 00:48:12.181" endtime="20221001 00:48:12.342"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>//*[@id="plpLayoutContainer"]/section[1]/div[1]/div/div[2]/div[3]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20221001 00:48:12.342" level="INFO">Simulating Mouse Over on element '//*[@id="plpLayoutContainer"]/section[1]/div[1]/div/div[2]/div[3]'.</msg>
+<status status="PASS" starttime="20221001 00:48:12.342" endtime="20221001 00:48:13.736"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="plpLayoutContainer"]/section[1]/div[1]/div/div[2]/div[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221001 00:48:13.737" level="INFO">Clicking element '//*[@id="plpLayoutContainer"]/section[1]/div[1]/div/div[2]/div[3]'.</msg>
+<status status="PASS" starttime="20221001 00:48:13.736" endtime="20221001 00:48:13.849"/>
+</kw>
+<status status="PASS" starttime="20221001 00:48:11.245" endtime="20221001 00:48:13.849"/>
+</kw>
+<kw name="Scroll In The Best Selling Menu" library="ChoosingFromStore">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221001 00:48:18.852" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221001 00:48:13.850" endtime="20221001 00:48:18.852"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, 3500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20221001 00:48:18.853" level="INFO">Executing JavaScript:
+window.scrollTo(0, 3500)
+Without any arguments.</msg>
+<status status="PASS" starttime="20221001 00:48:18.852" endtime="20221001 00:48:18.861"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>//a[@href="/product/dkp-7788802/%DA%AF%D9%88%D8%B4%DB%8C-%D9%85%D9%88%D8%A8%D8%A7%DB%8C%D9%84-%D8%A7%D9%BE%D9%84-%D9%85%D8%AF%D9%84-iphone-11-a2223-zaa-%D8%AF%D9%88-%D8%B3%DB%8C%D9%85-%DA%A9%D8%A7%D8%B1%D8%AA-%D8%B8%D8%B1%D9%81%DB%8C%D8%AA-128-%DA%AF%DB%8C%DA%AF%D8%A7%D8%A8%D8%A7%DB%8C%D8%AA-%D9%88-%D8%B1%D9%85-4-%DA%AF%DB%8C%DA%AF%D8%A7%D8%A8%D8%A7%DB%8C%D8%AA/"]</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221001 00:48:18.861" endtime="20221001 00:48:19.768"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[@href="/product/dkp-7788802/%DA%AF%D9%88%D8%B4%DB%8C-%D9%85%D9%88%D8%A8%D8%A7%DB%8C%D9%84-%D8%A7%D9%BE%D9%84-%D9%85%D8%AF%D9%84-iphone-11-a2223-zaa-%D8%AF%D9%88-%D8%B3%DB%8C%D9%85-%DA%A9%D8%A7%D8%B1%D8%AA-%D8%B8%D8%B1%D9%81%DB%8C%D8%AA-128-%DA%AF%DB%8C%DA%AF%D8%A7%D8%A8%D8%A7%DB%8C%D8%AA-%D9%88-%D8%B1%D9%85-4-%DA%AF%DB%8C%DA%AF%D8%A7%D8%A8%D8%A7%DB%8C%D8%AA/"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221001 00:48:19.768" level="INFO">Clicking element '//a[@href="/product/dkp-7788802/%DA%AF%D9%88%D8%B4%DB%8C-%D9%85%D9%88%D8%A8%D8%A7%DB%8C%D9%84-%D8%A7%D9%BE%D9%84-%D9%85%D8%AF%D9%84-iphone-11-a2223-zaa-%D8%AF%D9%88-%D8%B3%DB%8C%D9%85-%DA%A9%D8%A7%D8%B1%D8%AA-%D8%B8%D8%B1%D9%81%DB%8C%D8%AA-128-%DA%AF%DB%8C%DA%AF%D8%A7%D8%A8%D8%A7%DB%8C%D8%AA-%D9%88-%D8%B1%D9%85-4-%DA%AF%DB%8C%DA%AF%D8%A7%D8%A8%D8%A7%DB%8C%D8%AA/"]'.</msg>
+<status status="PASS" starttime="20221001 00:48:19.768" endtime="20221001 00:48:19.929"/>
+</kw>
+<status status="PASS" starttime="20221001 00:48:13.850" endtime="20221001 00:48:19.930"/>
+</kw>
+<kw name="Verify Choosing From Store" library="ChoosingFromStore">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221001 00:48:21.936" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221001 00:48:19.936" endtime="20221001 00:48:21.936"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>new</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20221001 00:48:21.936" endtime="20221001 00:48:21.944"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>iPhone 11 A2223 ZAA</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221001 00:48:23.206" level="INFO">Current page contains text 'iPhone 11 A2223 ZAA'.</msg>
+<status status="PASS" starttime="20221001 00:48:21.945" endtime="20221001 00:48:23.206"/>
+</kw>
+<status status="PASS" starttime="20221001 00:48:19.935" endtime="20221001 00:48:23.206"/>
+</kw>
+<kw name="Notify me when available" library="InformMe">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>//*[@id="__next"]/div[1]/div[3]/div[3]/div[2]/div[2]/div[2]/div[2]/div[3]/div/div/div[2]/button</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221001 00:48:23.208" endtime="20221001 00:48:23.323"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="__next"]/div[1]/div[3]/div[3]/div[2]/div[2]/div[2]/div[2]/div[3]/div/div/div[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221001 00:48:23.324" level="INFO">Clicking element '//*[@id="__next"]/div[1]/div[3]/div[3]/div[2]/div[2]/div[2]/div[2]/div[3]/div/div/div[2]/button'.</msg>
+<status status="PASS" starttime="20221001 00:48:23.324" endtime="20221001 00:48:23.617"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221001 00:48:28.620" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221001 00:48:23.617" endtime="20221001 00:48:28.620"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Select Frame</arg>
+<arg>//div[@role="dialog"]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>//div[@role="dialog"]</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20221001 00:48:28.621" level="INFO">Selecting frame '//div[@role="dialog"]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221001 00:48:28.899" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221001 00:48:28.656" endtime="20221001 00:48:28.899"/>
+</kw>
+<msg timestamp="20221001 00:48:28.902" level="FAIL">NoSuchFrameException: Message: no such frame
+  (Session info: chrome=105.0.5195.127)
+</msg>
+<status status="FAIL" starttime="20221001 00:48:28.621" endtime="20221001 00:48:28.902"/>
+</kw>
+<status status="PASS" starttime="20221001 00:48:28.620" endtime="20221001 00:48:28.902"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221001 00:48:33.903" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221001 00:48:28.903" endtime="20221001 00:48:33.903"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//*[@id="modal-root"]/div[16]/div/div/div/div[2]/div/form/label[3]/p</arg>
+<arg>[Return]</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221001 00:48:33.904" level="INFO">Sending key(s) ('[Return]',) to //*[@id="modal-root"]/div[16]/div/div/div/div[2]/div/form/label[3]/p element.</msg>
+<msg timestamp="20221001 00:48:34.215" level="INFO">Sending keys [Return]</msg>
+<status status="PASS" starttime="20221001 00:48:33.903" endtime="20221001 00:48:34.235"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221001 00:48:35.235" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221001 00:48:34.235" endtime="20221001 00:48:35.235"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//*[@id="modal-root"]/div[16]/div/div/div/div[2]/div/form/div/button</arg>
+<arg>[Return]</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221001 00:48:35.236" level="INFO">Sending key(s) ('[Return]',) to //*[@id="modal-root"]/div[16]/div/div/div/div[2]/div/form/div/button element.</msg>
+<msg timestamp="20221001 00:48:35.551" level="INFO">Sending keys [Return]</msg>
+<status status="PASS" starttime="20221001 00:48:35.235" endtime="20221001 00:48:35.568"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20221001 00:48:35.568" endtime="20221001 00:48:35.570"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221001 00:48:40.570" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221001 00:48:35.570" endtime="20221001 00:48:40.570"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//*[@id="__next"]/div[1]/div[3]/div[3]/div[2]/div[2]/div[2]/div[2]/div[3]/div/div/div[2]/button</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221001 00:48:40.584" level="INFO">Current page contains element '//*[@id="__next"]/div[1]/div[3]/div[3]/div[2]/div[2]/div[2]/div[2]/div[3]/div/div/div[2]/button'.</msg>
+<status status="PASS" starttime="20221001 00:48:40.570" endtime="20221001 00:48:40.584"/>
+</kw>
+<status status="PASS" starttime="20221001 00:48:23.208" endtime="20221001 00:48:40.584"/>
+</kw>
+<doc>Check The Availability Iphon13 In Digikala</doc>
+<tag>Functional</tag>
+<status status="PASS" starttime="20221001 00:47:51.997" endtime="20221001 00:48:40.584"/>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221001 00:48:40.586" endtime="20221001 00:48:43.012"/>
+</kw>
+<doc>Check The Availability Of Product</doc>
+<status status="PASS" starttime="20221001 00:47:51.796" endtime="20221001 00:48:43.012"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Functional</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="AvailabilityOfProduct">AvailabilityOfProduct</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
